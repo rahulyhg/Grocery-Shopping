@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cd.xsl"?>
+<catalog>
+    
+    <cd>
+        <product>bhakarwadi</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 180</cost>
+    </cd>
+    <cd>
+        <product>kachori</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>khakra</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>chiwda</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>manchurian stick</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>banana chips</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 250</cost>
+    </cd>
+    <cd>
+        <product>chakli</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>potato wafer</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>butter bhakarwadi</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 180</cost>
+    </cd>
+    <cd>
+        <product>garlic bhakarwadi</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>sandwich bhakarwadi</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>sankarpali</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 210</cost>
+    </cd>
+    <cd>
+        <product>pongal shankrpali</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>ladu</product>
+        <quantity>200 gm </quantity>
+        <cost>Rs 25</cost>
+    </cd>
+    <cd>
+        <product>chikki</product>
+        <quantity>200 gm </quantity>
+        <cost>Rs 25</cost>
+    </cd>
+    <cd>
+        <product>tomato ring</product>
+        <quantity>200 gm </quantity>
+        <cost>Rs 25</cost>
+    </cd>
+    <cd>
+        <product>manchurian ring</product>
+        <quantity>200 gm </quantity>
+        <cost>Rs 25</cost>
+    </cd>
+    <cd>
+        <product>samosa</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>small samosa</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>palak sev</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>methi gathiya</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+    <cd>
+        <product>palak chiwda</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>methi chiwda</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>diet chiwda</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 200</cost>
+    </cd>
+    <cd>
+        <product>vada pav khakra</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 300</cost>
+    </cd>
+    <cd>
+        <product>sev puri</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 220</cost>
+    </cd>
+    <cd>
+        <product>khari bundi</product>
+        <quantity>1kg </quantity>
+        <cost>Rs 240</cost>
+    </cd>
+</catalog>

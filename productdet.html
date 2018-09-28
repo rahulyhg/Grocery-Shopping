@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Details</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+            body:before {
+  background:url(http://www.tatachemicals.com/upload/images/masthead/mast_Food_and_nutrition.jpg) no-repeat ;
+  background-size: cover;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 100%;
+  opacity:.5;
+}
+                .header{
+                padding: 16px;
+                text-align:center;
+                background-color: #4c4c4c;
+                color: white;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        
+                   
+        form{
+                padding: 10px;
+            }
+		th,td{
+
+			padding:5px;
+		}
+		td input{
+                    padding: 8px 16px;
+			width: 100%;
+    		height: 30px;
+    		
+    		box-sizing: border-box;
+    		border: 1px solid blue;
+    		border-radius: 4px;
+                 margin-bottom: 5px;
+    		font-size: 15px;
+    		resize: none;
+		}
+		
+                
+            
+             /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                    .col1, .col2 {width:100%;
+                        font-size:1.8rem;}
+            }                   
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+            @media screen and (min-width:900px){
+                    body{
+                        font-size:1.6rem;
+                                }
+            }
+
+           
+            .col1{
+                    float:left;
+                    width:40%;
+                   
+                    
+                    
+                }
+            .col2{
+                    float:left;
+                   
+            }
+        
+	</style>
+	<script type='text/javascript'>
+           
+            function validation(){
+                if (document.product.pid.value == ""){
+                    alert("id should not be empty")
+                    return false;
+                }
+                if (document.product.pname.value == ""){
+                    alert("Name should not be empty")
+                    return false;
+                }
+                if (document.product.categoryname.value == ""){
+                    alert("categoryname should not be empty")
+                    return false;
+                }
+                if (document.product.pcost.value == ""){
+                    alert("cost should not be empty")
+                    return false;
+                }
+                if (document.product.pquantity.value == ""){
+                    alert("quantity should not be empty")
+                    return false;
+                }
+                return true;
+            }       
+        </script>
+</head>
+<body>
+	<div style="padding:15px" class="header">
+	S.J BHANUSHALI KIRANA STORE
+	</div>
+<center>
+	<hr>
+        <div class="container">
+        <form name="product" method="post" action="PhpForm.php" >
+            <table id ="table1" class="table table-condensed table-hover">
+		<tr>
+			<th class="col1">Product id:</th>
+			<td class="col2">
+				<input type="number" name="pid"  placeholder="Enter product id" min="1" >
+			</td>
+		</tr>
+		<tr>
+			<th class="col1">Product Name: </th>
+			<td class="col2">
+				<input type="text" name="pname" placeholder="Enter product name" pattern="^[a-zA-Z][a-zA-Z- ]{1,20}$">
+			</td>
+		</tr>
+		<tr>
+			<th class="col1"> Category Name: </th>
+			<td class="col2">
+				<input type="text" name="categoryname" placeholder="Enter category name">
+			</td>
+		</tr>
+		<!--<tr>
+			<th>Enter the image of the product</th>
+			<td>
+				<input type="file" name="img">
+			</td>
+		</tr>-->
+		<tr>
+			<th class="col1">Cost of the product:</th>
+			<td class="col2">
+				<input type="number" name="pcost" placeholder="Enter the cost" min="1">
+			</td>
+		</tr>
+                <tr>
+                        <th class="col1">Quantity : </th>
+                        <td class="col2">
+                                <input type="number" name="pquantity" placeholder="Enter Quanity" min="1">
+                        </td>
+                </tr>
+		<tr>                    
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="col1"><input type="submit" name="submit1" value="Insert" onclick="return validation()"> </td>
+                    <td class="col2" style='width:50%'><input type="submit" name="submit2" value="Display"> </td>
+                </tr> 
+                
+                
+                
+
+            </table>
+	
+	</form>
+        </div>
+</center>
+</body>
+</html>

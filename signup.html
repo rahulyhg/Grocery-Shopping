@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   
+      
+  <title>signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	input[type=text],input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}	
+		th,td{
+
+			padding:5px;
+		}
+                
+                @media (max-width: 600px) {  
+                .col1, .col2 {width:100%;
+                    font-size:1.8rem;} /*1rem = 16px*/
+                }
+ 
+                @media screen and (min-width:900px){
+                body{
+                        font-size:1.6rem;
+                        center:50%
+                    }
+                }
+                .col1{
+                    float:left;
+                    width:30%
+                }
+                .col2{
+                    float:left;
+                }
+		
+	</style>
+  
+  <script type='text/javascript'>
+            function validation()
+            {
+                if (document.signup.name.value == "")
+                {
+                    alert("Name should not be empty")
+                    return false;
+                }
+                if (document.signup.uname.value == "")
+                {
+                    alert("Username should not be empty")
+                    return false;
+                }
+                
+                if (document.signup.pwd.value =="")
+                {
+                    alert("Password should not be empty")
+                    return false;
+                }
+                if (document.signup.address.value == "")
+                {
+                    alert("address should not be empty")
+                    return false;
+                }
+                if (document.signup.mobile_no.value == "")
+                {
+                    alert("Mobile no should not be empty")
+                    return false;
+                }
+                if (document.signup.email.value == "")
+                {
+                    alert("email should not be empty")
+                    return false;
+                }
+
+
+                return true;
+            }       
+        </script>
+</head>
+<center>
+<h1>SIGN UP</h1>
+<body class="blue-background white-text">
+
+   
+        
+  <form name='signup' method="post" action="signup.php" onsubmit="return validation()">
+      <table>
+            
+           <tr>
+            <th class="col1">Name </th> <td class="col2"> <input type="text" placeholder="Enter name" class="form-control" name="name"> </td>
+        </tr>
+         <tr>
+            <th class="col1">Username </th> <td class="col2"> <input type="text" placeholder="Enter username" class="form-control" name="uname"> </td>
+        </tr>
+         <tr>
+            <th class="col1">Mobile </th> <td class="col2"> <input type="tel" pattern="[1000000000-9999999999]{10}" placeholder="Enter mobile no" class="form-control" name="mobile_no"> </td>
+        </tr>
+         <tr>
+            <th class="col1">Address </th> <td class="col2"> <input type="text" placeholder="Enter address" class="form-control" name="address"> </td>
+        </tr>
+         <tr>
+            <th class="col1">Email </th> <td class="col2"> <input type="text" placeholder="Enter email" class="form-control" name="email"> </td>
+        </tr>
+         <tr>
+            <th class="col1">Password </th> <td class="col2"> <input type="text" placeholder="Enter password" class="form-control" id="Password" name="Password"> </td>
+        </tr>
+        
+        <tr>
+       <th class="col1"
+   </th>
+   <td class="col2"><input type="submit" name="submit"  value="Signup"> </td>
+   </tr>
+               <!-- <tr>
+             
+                    
+                    <td>Name </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter name" name="name"> </td>
+                </tr>
+                <tr>
+                    
+                    <td>Username </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter username" name="uname"> </td>
+                </tr>
+                <tr>
+                    <td>Mobile no </td> <td> <input type="tel" style="width:200px" class="form-control" placeholder="Enter mobile no" name="mobile_no"> </td> 
+                </tr>
+                <tr>
+                    <td>Address </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter address" name="address"> </td>
+                </tr> 
+               
+                <tr>
+                    <td>Email </td> <td> <input type="email" style="width:200px" class="form-control" placeholder="Enter email" name="email"> </td>
+                </tr
+                <tr>
+                    <td>Password </td> <td> <input type="password" style="width:200px" class="form-control" placeholder="password" id="Password" name="Password"> </td>               
+                </tr>
+                
+                <tr>                    
+                    <td> </td>
+                    <td><input type="submit" name="submit" value="Signup" ></td>
+                </tr>                -->
+            </table>
+        </form>
+</html>

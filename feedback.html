@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+</style>
+<script type='text/javascript'>
+            function validation()
+            {
+                if (document.feedback.fname.value == "")
+                {
+                    alert("Firstname should not be empty")
+                    return false;
+                }
+                if (document.feedback.lname.value == "")
+                {
+                    alert("Lastname should not be empty")
+                    return false;
+                }
+                if (document.feedback.email.value == "")
+                {
+                    alert("Email id should not be empty")
+                    return false;
+                }
+                if (document.feedback.city.value == "")
+                {
+                    alert("City should not be empty")
+                    return false;
+                }
+                if (document.feedback.subject.value == "")
+                {
+                    alert("Subject should not be empty")
+                    return false;
+                }
+                return true;
+            }
+                </script>
+</head>
+<body>
+<center>
+<h3>Feedback Form</h3>
+
+<div class="container">
+  <form name = "feedback" method="post" class="container" action="home.html" onsubmit="return validation()">
+      <table>
+            
+                <tr>
+             
+                    
+                    <td>First Name </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter firstname" name="fname"> </td>
+                </tr>
+                <tr>
+                    
+                    <td>Last Name </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter lastname" name="lname"> </td>
+                </tr>
+                <tr>
+                    <td>Email </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter email id" name="email"> </td>
+                </tr> 
+               
+                <tr>
+                    <td>City </td> <td> <input type="text" style="width:200px" class="form-control" placeholder="Enter City" name="city"> </td>
+                 </tr
+                <tr>
+                    <td>Subject </td> <td> <input type="text" style="height:200px" class="form-control" placeholder="Write Something.." id="subject" name="subject"> </td>               
+                </tr>
+                
+                <tr>                    
+                    <td> </td>
+                    <td><button type="submit" name="submit">  Submit </button></td>
+                </tr>                
+            </table>
+    
+  </form>
+</div>
+</center
+</body>
+</html>
